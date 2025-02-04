@@ -1,0 +1,130 @@
+:root {
+    --main-color: rgb(99, 82, 211);
+    --bg-color: #6cbe49;
+    --bg-color-2: rgb(171, 41, 197);
+    --text-color: rgb(127, 41, 10);
+    --text-color-2: #04181a;
+    --text-color-3: rgba(10, 5, 35, 0.867);
+    --font-size-large: 22px;
+    --font-size-small: 11px;
+    --font-size-medium: 17px;
+    --font-size-general: 15px;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.header {
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(138, 195, 245);
+    color: rgb(33, 22, 99);
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: var(--font-size-small);
+}
+
+
+
+.intro {
+    padding: 30px;
+    padding-top: 150px;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: var(--font-size-medium);
+
+}
+
+.flexbox-section {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    font-size: var(--font-size-medium);
+    color: var(--text-color-2);
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 25px;
+}
+
+.flex-item {
+    background-color: var(--main-color);
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px black solid;
+}
+
+.grid-section {
+    background-color: var(--bg-color);
+    padding: 20px;
+    font-size: var(--font-size-medium);
+    color: var(--text-color-2);
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px;
+    background-color: var(--bg-color);
+    font-size: var(--font-size-medium);
+}
+
+.grid-item {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.positioning-section {
+    background-color: var(--bg-color);
+    padding: 35px;
+    font-size: var(--font-size-general);
+    color: var(--text-color-3);
+    text-align: center;
+}
+
+.relative-container {
+    position: relative;
+    background-color: var(--bg-color-2);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 25px;
+}
